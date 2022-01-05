@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
       name="viewport"
@@ -17,7 +18,7 @@
 
     <title>Calorie Tracker</title>
   </head>
-  <body>
+  <body class="bg-dark">
     <header>
       <h1>Calorie Tracker</h1>
       <h3>Be Fit. Be Happy.</h3>
@@ -26,24 +27,24 @@
       <div class="container">
         <div class="container-contents">
           <div class="row">
-            <div class="col-lg-6-mx-auto">
+            <div class="col-lg-6 mx-auto">
               <div class="card card-body text-center mt-5">
-                <h1 class="heading-calculate">Calculate Your Calorie Intake</h1>
+                <h1 class="heading display-5 pb-3">Calorie Calculator</h1>
                 <form id="calorie-form">
-                  <div class="form-group-row">
-                    <label for="age" class="age-label">Age</label>
-                    <div class="age-box">
+                  <div class="form-group row">
+                    <label for="age" class="col-sm-2 col-form-label">Age</label>
+                    <div class="col-sm-10">
                       <input
                         type="number"
                         class="form-control"
                         id="age"
-                        placeholder="Ages 15-80"
+                        placeholder=" Ages 15-80"
                       />
                     </div>
                   </div>
 
-                  <fieldset class="gender-box">
-                    <div class="form-group">
+                  <fieldset class="form-group">
+                    <div class="row">
                       <legend class="col-form-label col-sm-2 pt-0">
                         Gender
                       </legend>
@@ -88,7 +89,7 @@
                         type="number"
                         class="form-control"
                         id="weight"
-                        placeholder="In kilograms"
+                        placeholder=" In kilograms"
                       />
                     </div>
                   </div>
@@ -102,7 +103,7 @@
                         type="number"
                         class="form-control"
                         id="height"
-                        placeholder="In centimeters"
+                        placeholder=" In centimeters"
                       />
                     </div>
                   </div>
@@ -134,6 +135,7 @@
 
                   <div class="form-group">
                     <input
+                      id="calc-btn"
                       type="submit"
                       value="Calculate"
                       class="btn btn-dark btn-block"
@@ -146,7 +148,11 @@
                 </div>
 
                 <div id="results" class="pt-4">
-                  <h5>Total Calories</h5>
+                  <h5>Your Maintenance Calories</h5>
+                  <h4>
+                    (Subtract 300-500 for a deficit <br />
+                    Add 300-500 for a surplus)
+                  </h4>
                   <div class="form-group">
                     <div class="input-group">
                       <input
@@ -165,8 +171,6 @@
       </div>
     </div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -182,6 +186,6 @@
       integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
       crossorigin="anonymous"
     ></script>
-    <script src="app.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
