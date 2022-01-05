@@ -1,0 +1,70 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body,
+html {
+  font-family: "Josefin Sans", sans-serif;
+  height: 100%;
+  background-color: #f3f3f3;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  width: 100%;
+  background-color: #9455f4;
+}
+
+header h1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+header h3 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  padding-top: 10px;
+}
+
+.main-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.main-wrapper .container {
+  background-color: wheat;
+  width: 500px;
+  border-radius: 10px;
+}
+
+.container .container-contents {
+  padding-left: 15px;
+}
+
+.container .heading-calculate {
+  font-weight: 600;
+  font-size: 30px;
+  text-align: center;
+  padding: 20px;
+}
+
+.form-group-row .age-box {
+  margin-bottom: 10px;
+}
+
+.gender-box {
+  border: none;
+}
+
+.form-group {
+  padding: 10px 0 10px 0;
+}
