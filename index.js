@@ -574,5 +574,11 @@ const App = (function (ItemCtrl, StorageCtrl, UICrtl) {
   };
 })(ItemCtrl, StorageCtrl, UICrtl);
 
+window.onload = function () {
+  document.getElementById("cals-remaining").innerHTML = 0;
+  const items = document.getElementById("item-list");
+  items.innerHTML = "";
+};
+
 //Initilizing App
 App.init();
